@@ -1,4 +1,5 @@
 .header {
+<<<<<<< HEAD
     background-color: #121920;
     width: 100%;
     height: 60%;
@@ -16,3 +17,11 @@
 
 
 
+=======
+    background-color: var(--azul-secundario);
+    width:100%;
+    height: 5em;
+}
+
+
+>>>>>>> Juan
