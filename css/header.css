@@ -1,7 +1,97 @@
+/* Header */
 .header {
-    background-color: var(--azul-secundario);
-    width:100%;
-    height: 5em;
+    /* font-family: 'Anton', sans-serif !important; */
+    position: absolute;
+    width: 100%;
+    height: 30em;
+    background-color: black;
+    
 }
-
-
+.header__background {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(1);
+}
+/* Contenido del Header */
+.header__contenido {
+    position: absolute;
+    top: 0;
+    display: grid;
+    font-family: 'Teko', sans-serif !important;
+    width: 100%;
+    height: 30em;
+    grid-template-rows: 20% 55% 25%;
+    grid-template-columns: 5% 10% 10% 12.5% 12.5% 42.5%;
+    column-gap: 1.5%;
+    grid-template-areas:
+    "nav nav nav nav nav nav"
+    "texto texto texto texto texto ."
+    ". boton boton boton . ."
+    ;
+}
+.nav {
+    width: 100%;
+    height: 100%;
+    background-color: var(--gris-2);
+    grid-area: nav;
+}
+.header__texto {
+    width: 100%;
+    height: 100%;
+    grid-area: texto;
+    display: flex;
+    align-content: center;
+    flex-direction: column-reverse;
+}
+.header__texto h1 {
+    color: #fff;
+    font-family: 'Teko', sans-serif !important;
+    font-weight: 900;
+    font-size:7em;   
+    margin: 0;
+    margin-left: 15%;
+    line-height: 85%;
+    color: var(--gris-1)
+}
+.header__botones {
+    grid-area: boton;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    
+}
+.header__boton {
+    padding: .5em 1em .5em 1em;
+    border: 2px solid var(--gris-1);
+    background: transparent;
+    font-weight: 800;
+    font-size: 1.2em;
+    color: var(--gris-1);
+    width: 10em;
+    height: 2.3em;
+    letter-spacing: .1em;   
+}
+.header__boton:hover {
+    background: var(--gris-2);
+    color: #fff;
+    border-color: var(--gris-1);
+    font-weight:900;
+    transition: .35s;
+}
+.header__logo {
+    position:absolute;
+    top:0;
+    left:0;
+    width: 200px;
+    height: 80px;
+}
+.header__logo img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    
+}
