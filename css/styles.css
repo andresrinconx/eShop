@@ -10,3 +10,8 @@ body {
     width: 100%;
     height: 100%;
 }
+
+:root {
+    --gris-1: #161616;              /*Gris oscuro solido*/
+    --gris-2: #16161693;            /*Gris oscuro transparente*/
+}

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 :root {
     --gris-claro: rgb(51, 51, 51);
@@ -14,63 +15,34 @@
     width: 100%;
     height: 300em;
     background: linear-gradient(to bottom, rgb(182, 220, 223), rgb(255, 255, 255));
+=======
+main {
+>>>>>>> Juan
     display: grid;
-    grid-template-rows: 12% 2.5% 9% 20% 20% ;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 22.5% 27.5%;
+    width: 100%;
+    height: 100em;
     grid-template-areas: 
-    "promociones"
-    "titulo"
-    "categorias"
-    "categorias-secundarias"
-    "extra"
-    ;   
+    ". ."
+    ". categorias"
+    ;
 }
-
-.nav {
-    display: flex;
-    width:100%;
-    height: 2.5em;
-    background-color: var(--gris-oscuro);
-}
-
-.main__promociones {
-    display: flex;
-    margin: 0 auto;
-    width: 80%;
-    height: 35em;
-    background: #0000008f;
-    justify-content: space-between;
-    grid-area: promociones;
-}
-
-.material-symbols-outlined {
-    align-self: center;
-    color: white;
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 700,
-    'GRAD' 200,
-    'opsz' 48;
-}
-
 .main__contenedor-categorias {
     display: flex;
-    width: 82%;
-    height: 25em;
-    margin: 1em auto;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    grid-area: categorias;
+    position: relative;
+    justify-content: space-around;
 }
-
 .main__categoria {
-    display: grid;
-    width: 20em;
-    height: 25em;
+    width: 30%;
+    height: 80%;
     background-color: #fff;
-    border-bottom: solid .5px var(--gris-muy-claro);
-    box-shadow: 1px 1px 5px var(--gris-muy-claro);
-    transform: scale(1, 1);
-    transition: .5s;
-
+    border: .1px rgb(134, 134, 134) solid;
+    box-shadow: 1px 1px 10px rgb(44, 44, 44);
 }
+<<<<<<< HEAD
 
 .main__categoria:hover {
     transform: scale(1.01, 1.01);
@@ -125,4 +97,6 @@
 }
 
 
+>>>>>>> Juan
+=======
 >>>>>>> Juan
